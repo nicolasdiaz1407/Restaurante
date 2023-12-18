@@ -1,0 +1,99 @@
+.menu {
+    width: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    padding-top: 100px;
+    background-color: #131111;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px; /* Márgenes a los lados para separar de los bordes de la página */
+    padding-bottom: 100px;
+}
+
+.contenedor-izquierdo{
+    width: 55%; /* Ambos contenedores ocupan el 48% del ancho total */
+    height: 500px; /* Altura fija para los contenedores (ajústala según tus necesidades) */
+}
+.contenedor-derecho {
+    width: 45%; /* Ambos contenedores ocupan el 48% del ancho total */
+    height: 460px; /* Altura fija para los contenedores (ajústala según tus necesidades) */
+}
+
+.contenedor-izquierdo {
+    padding: 20px;
+    background-color: transparent;
+    color: #fff; /* Texto blanco */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.menu-especial-sub {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: "Dancing Script", cursive;
+    color: #f3af82;
+}
+
+.menu-especial-tit {
+    font-size: 2em;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    color: #f8893e;
+}
+
+.menu-lista {
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.menu-plato,
+.menu-linea,
+.menu-precio {
+    font-size: 1.2em;
+}
+
+.menu-linea {
+    flex: 1;
+    height: 1px;
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+.menu-descripcion {
+    font-size: 0.9em;
+}
+
+.btn-ver-mas {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: #fff;
+    height: 40px;
+    padding: 5px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.6s;
+}
+
+.btn-ver-mas:hover {
+   transform: scale(1.05);
+}
+
+.btn-ver-mas a{
+    text-decoration: none;
+    color: rgb(248, 137, 62);
+}
+
+.contenedor-derecho {
+    background: url("../Img/engin-akyurt-vUlsoVpTbZs-unsplash.jpg") center/cover no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar el contenedor */
+}

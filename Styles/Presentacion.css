@@ -1,0 +1,98 @@
+.inicio {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+  background-image: url("../Img/Inicio/fondoInicio.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex; /* Centra verticalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.inicio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con opacidad */
+}
+
+.inicio2 {
+  position: relative;
+  margin: 0;
+  z-index: 1;
+}
+
+.presentacion {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45%;
+  text-align: center;
+  color: #fff;
+}
+
+.parrafo {
+  font-family: "Dancing Script", cursive;
+  color: #f3af82;
+  font-size: 28px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.titulo {
+  font-size: 46px;
+  color: #f8893e;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.frase {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  max-width: 70%; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centra horizontalmente */
+  opacity: 0.8;
+}
+
+.bn59 {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  position: relative;
+  outline: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 45px;
+  width: 130px;
+  opacity: 1;
+  margin-top: 40px;
+  transition: all 0.6s ease;
+}
+
+.bn59:hover {
+  transform: scale(1.05);
+}
+
+.bn59 a {
+  text-decoration: none;
+  color: rgb(248, 137, 62);
+  font-size: 15px;
+  transition: all 0.4s ease;
+}
+
+.bn59 a:hover{
+  opacity: 0.7;
+}

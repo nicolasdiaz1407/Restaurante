@@ -1,0 +1,45 @@
+.dark-footer {
+    background-color: rgb(0, 0, 0); /* Color de fondo oscuro */
+    color: #fff; /* Color del texto blanco */
+    padding-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.icon {
+    margin-right: 20px;
+    color: #fff; /* Color de los íconos blanco */
+    font-size: 1.4em;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los enlaces en el pie de página */
+.legal {
+    text-align: center;
+}
+
+.legal a {
+    color: #f8893e;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.legal p{
+    color: #fff;
+}
+
+/* Hover de los íconos y enlaces */
+.icon:hover, .legal a:hover {
+    color: #F8C471; /* Cambia el color al hacer hover */
+}

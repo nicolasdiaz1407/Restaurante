@@ -1,0 +1,165 @@
+body {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #161414;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px; /* Ajusta el tamaño del círculo según tus preferencias */
+    height: 35px;
+    border-radius: 50%; /* Hace que el contenedor sea un círculo */
+    background-color: #f8893e; /* Color de fondo del círculo */
+    margin-right: 10px; /* Espacio entre el icono y el texto del restaurante */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+nav{
+    z-index: 2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f8893e;
+    opacity: 0.7;
+}
+
+nav a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff6600;
+    transition: width 0.3s ease;
+}
+
+nav li:hover > a:after {
+    width: 100%;
+}
+
+.submenu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submenu:hover > ul {
+    display: block;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search i {
+    font-size: 18px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.bn3 {
+    display: inline-block;
+    padding: 0.5em 1.7em;
+    margin: 0 0.1em 0.1em 0;
+    border: 0.10em solid rgb(255, 255, 255);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+    text-align: center;
+    transition: all 0.5s;
+}
+  
+.bn3:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu-btn {
+    display: none; /* Inicialmente oculto en pantallas más grandes */
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 15px; /* Ajusta el espacio entre el botón y el resto del contenido */
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Cambia la dirección del flex container a columna */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Espacio entre el logo y el menú en dispositivos móviles */
+    }
+
+    nav {
+        width: 100%; /* Ancho completo en dispositivos móviles */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambia la dirección del flex container a columna */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+
+    nav li {
+        margin: 10px 0; /* Espacio entre elementos del menú en dispositivos móviles */
+    }
+
+    .search {
+        margin-top: 10px; /* Espacio entre la barra de búsqueda y el menú en dispositivos móviles */
+    }
+}
